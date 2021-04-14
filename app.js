@@ -7,6 +7,7 @@ const mongoSanitize = require("express-mongo-sanitize");
 const xss = require("xss-clean");
 const hpp = require("hpp");
 const cors = require("cors");
+const compression = require("compression");
 const cookieParser = require("cookie-parser");
 
 const AppError = require("./utilities/appError");
@@ -80,6 +81,8 @@ app.use(
     ],
   })
 );
+
+app.use(compression());
 
 //definig our own middlewares and using them
 // app.use((req, res, next) => {

@@ -28,7 +28,7 @@ exports.getTour = catchAsync(async (req, res, next) => {
     return next(new AppError("There is no tour with that name!", 404));
   }
 
-  console.log(tour);
+
 
   //2) Build template and Render template using data from 1)
   res.status(200).render("tour", {

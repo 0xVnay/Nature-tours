@@ -34,7 +34,7 @@ const sendErrorDev = (err, req, res) => {
     });
   }
   // B) RENDERED WEBSITE
-  console.log("ERROR", err);
+  console.log("ERROR 💣", err);
 
   return res.status(err.statusCode).render("error", {
     title: "Something went wrong!",
@@ -61,7 +61,7 @@ const sendErrorProd = (err, req, res) => {
     }
     // b) Programming or other unknown error: don't leak error details
     // 1) Log error
-    console.log("ERROR", err);
+    console.log("ERROR 💣", err);
     // 2) Send generic message
     res.status(500).json({
       status: "error",
@@ -80,7 +80,7 @@ const sendErrorProd = (err, req, res) => {
   }
   // Programming or other unknown error: don't leak error details
   // 1) Log error
-  console.log("ERROR", err);
+  console.log("ERROR 💣", err);
   // 2) Send generic message
   res.status(500).json({
     status: "error",

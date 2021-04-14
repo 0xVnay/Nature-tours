@@ -1,0 +1,53 @@
+{
+  "name": "nature-tours",
+  "proxy": "http://localhost:3000",
+  "version": "1.0.0",
+  "description": "Learning Node,Express & MongoDB",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "start:prod": "NODE_ENV=production nodemon server.js",
+    "debug": "ndb server.js",
+    "watch:js": "parcel watch public/js/index.js --out-dir ./public/js --out-file bundle.js",
+    "build:js": "parcel build public/js/index.js --out-dir ./public/js --out-file bundle.js"
+  },
+  "author": "Vinay Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "axios": "^0.21.0",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.0.1",
+    "express-rate-limit": "^5.2.3",
+    "helmet": "^4.2.0",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^8.5.1",
+    "mapbox-gl": "^2.0.0",
+    "mongoose": "^5.11.5",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.4.16",
+    "pug": "^3.0.0",
+    "slugify": "^1.4.6",
+    "validator": "^13.1.17",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "parcel-bundler": "^1.12.3",
+    "prettier": "^1.17.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  }
+}

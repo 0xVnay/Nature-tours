@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body>
+  <div id='map' style='width: 800px; height: 600px;'></div>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoidmluYXlsZW9rdW1hciIsImEiOiJja2lpb21iYWoyNmp1MnFvNWc1Z2ZsN3NjIn0.zZwGHyWX_1424kzPP3r_Yw';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/vinayleokumar/ckiiqn7xw2y6y19s13h7kbt4e'
+    });
+  </script>
+</body>
+
+</html>
+
+<div class="alert alert--${type}">${msg}</div>
